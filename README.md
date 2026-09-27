@@ -10,7 +10,6 @@
 >
 > This homelab is a single, continuously evolving production-grade environment — not a set of isolated labs. Every piece below is a real, running system with a git history behind it: identity federation across four distinct auth mechanisms, least-privilege access control, network segmentation, and full observability, all under infrastructure-as-code discipline.
 >
-> The goal isn't just to deploy tools — it's to be able to explain *why* each one is configured the way it is, what broke along the way, and what an enterprise would do differently at scale.
 
 ---
 
