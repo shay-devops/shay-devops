@@ -44,7 +44,6 @@
 ## On the roadmap
 
 - SIEM (Wazuh) with Suricata IDS feeding alerts into a single correlation point
-- Vault's own OIDC auth backend reprovisioned via Terraform, bringing it under the same IaC discipline as everything else
 - AI-assisted alert triage (Ollama, local inference)
 
 ---
