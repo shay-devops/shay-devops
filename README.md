@@ -20,7 +20,7 @@
 
 | Capability | What it demonstrates | Stack |
 |---|---|---|
-| **Okta SSO federation across 4 services** | Four genuinely different integration mechanisms — config-file patch, environment variables, DB-registered via CLI, and a secrets manager's own native OIDC backend — not the same integration copy-pasted four times | Okta, OIDC, Grafana, BookStack, Gitea, Vault |
+| [**Okta SSO federation across 4 services**](https://github.com/shay-devops/homelab-infra/blob/main/docs/okta-federation.md) | Four genuinely different integration mechanisms — config-file patch, environment variables, DB-registered via CLI, and a secrets manager's own native OIDC backend — not the same integration copy-pasted four times | Okta, OIDC, Grafana, BookStack, Gitea, Vault |
 | **Vault least-privilege ACL design** | Human vs. machine identity separation (OIDC role vs. AppRole), explicit-deny hardening on rekey/raw-storage/root-policy paths, a deliberate decision to run no standing viewer tier on a secrets manager | HashiCorp Vault, HCL |
 | **RBAC-scoped cluster access** | Kubeconfig built from a dedicated ServiceAccount + ClusterRole (get/list/watch only, secrets excluded) — boundary verified by testing a denied action, not just configuring one | Kubernetes RBAC |
 | **Vault dynamic secrets brokering** | AppRole-based machine identity for Terraform/Ansible, scoped per-tool by blast radius, zero static secrets in any tracked file | Vault, AppRole, Terraform, Ansible |
